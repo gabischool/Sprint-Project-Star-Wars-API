@@ -1,8 +1,35 @@
 .App {
   text-align: center;
 }
-.Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+
+
+
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 }
-/* write your parent styles in here for your App.js */
+
+
+.ul{
+  background: #ffffffc2;
+  padding: 10px;
+  display: block;
+  width: 10%;
+}
+ul{
+  display: flex;
+}
+ li{
+ 
+  list-style: none;
+}
+
+.flim_container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 15px;
+}

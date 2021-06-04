@@ -5,3 +5,27 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+.header{
+  justify-content: space-around;
+  width: 52%;margin: auto;
+  padding: 20px;
+  background: rgb(245, 243, 243);
+
+}
+
+.span{
+  display: flex;
+  justify-content: center;
+  
+}
+.span span{
+  margin: 0px 90px 0px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+span:hover{
+  background: #00000054;
+  padding: 5px;
+  position: relative;
+}
