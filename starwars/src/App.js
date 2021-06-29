@@ -1,19 +1,53 @@
 import React from 'react';
 import './App.css';
+import axios from 'axios';
+import {useState, useEffect } from 'react';
+import MovieList from "./components/MovieList";
+import MovieCard from "./components/MovieCard";
+import CharacterList from "./components/CharacterList";
+import CharacterCard from "./components/CharacterCard";
+import Home from './components/Home';
 
-const App = () => {
-  // Try to think through what state you'll need for this app before starting. Then build out
-  // the state properties here.
+import {Switch, Route, Link} from "react-router-dom";
+import { Container } from 'reactstrap';
 
-  // Fetch charactersn and films from the star wars api in an effect hook. Remember, anytime you have a 
-  // side effect in a component, you want to think about which state and/or props it should
-  // sync up with, if any.
+export default function App () {
+
+
+
 
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
-    </div>
-  );
-}
 
-export default App;
+          
+
+          <Container className="App">
+
+        <h1 className="Header">React Wars</h1>
+            
+              <nav>
+                <div className="nav-links">
+
+                   <Link to="/">Home</Link>
+                  <Link to="/character">Characters</Link>
+                  <Link to="/films">Movies</Link>
+                  
+
+                  </div>
+
+              </nav> 
+
+                  <Switch>
+
+                      <Route path="/character" component={CharacterList} />
+                      
+                      <Route path="/films" component={MovieList} />
+                      <Route path="/" component={Home} />
+
+                  </Switch>      
+        </Container>
+
+      
+      );
+    }
+
+
