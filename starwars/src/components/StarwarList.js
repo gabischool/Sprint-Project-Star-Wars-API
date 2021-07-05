@@ -7,8 +7,8 @@ import axios from "axios";
 
 
 function StarwarList() {
-
-
+// 
+// added all files
     const [people, setPeople] = useState([]);
 
     useEffect( () =>{
